@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "dial-login",
+    "slug": "dial-login",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
