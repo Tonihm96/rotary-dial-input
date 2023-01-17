@@ -79,8 +79,8 @@ const Gesture = ({ theta, center, radius, children }: GestureProps) => {
       console.log(getSelectedDigit(360 - toDeg(theta.value)));
 
       theta.value = withSpring(INITIAL_ROTATION, {
-        stiffness: 100,
-        overshootClamping: true
+        stiffness: 100
+        //overshootClamping: true
       });
     });
 
