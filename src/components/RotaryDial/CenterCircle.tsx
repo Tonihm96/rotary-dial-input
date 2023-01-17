@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-interface CenterProps {
+interface CenterCircleProps {
   diameter: number;
   color: string;
 }
 
-const CenterCircle = ({ diameter, color }: CenterProps) => {
+const CenterCircle = ({ diameter, color }: CenterCircleProps) => {
   return <View style={styles(diameter, color).container} />;
 };
 

@@ -7,13 +7,13 @@ import { Dial } from './Dial';
 import { CenterCircle } from './CenterCircle';
 import { INITIAL_ROTATION } from '../../constants';
 
-interface Props {
+interface RotaryDialProps {
   diameter: number;
   backgroundColor: string;
   color: string;
 }
 
-const RotaryDial = ({ diameter, backgroundColor, color }: Props) => {
+const RotaryDial = ({ diameter, backgroundColor, color }: RotaryDialProps) => {
   const theta = useSharedValue(INITIAL_ROTATION);
   const radius = diameter / 2;
   const centerCoordinates = { y: diameter / 2, x: diameter / 2 };

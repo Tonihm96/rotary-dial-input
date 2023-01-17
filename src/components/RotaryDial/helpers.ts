@@ -10,8 +10,8 @@ import {
 
 /**
  * Checks in which quadrant the current angle is in, and clamps it's value accordingly
- * @param oldValue offset from current angle
- * @param newValue computed value which will not exceed any of the rotation limits
+ * @param oldValue offset from current angle in radians
+ * @param newValue current angle in radians
  * @returns newValue if it didn't exceed any limits, or one of the rotation limits
  */
 export const clampValue = (oldValue: number, newValue: number) => {
@@ -31,7 +31,7 @@ export const clampValue = (oldValue: number, newValue: number) => {
 
 /**
  * Checks if the current angle is close to the end of the final quadrant
- * @param theta current angle
+ * @param theta current angle in radians
  * @returns true if `theta` is higher than 0 and lower than 45 degrees
  */
 export const isCloseToEnd = (theta: number) => {
@@ -41,7 +41,7 @@ export const isCloseToEnd = (theta: number) => {
 
 /**
  * Checks if the current angle is close to the start of the initial quadrant
- * @param theta current angle
+ * @param theta current angle in radians
  * @returns true if `theta` is higher than 315 and lower than 360 degrees
  */
 export const isCloseToStart = (theta: number) => {

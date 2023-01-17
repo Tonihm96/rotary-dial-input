@@ -1,7 +1,7 @@
 import React from 'react';
 import { Circle } from 'react-native-svg';
 
-interface DigitProps {
+interface HoleProps {
   rotation: number;
   containerRadius: number;
   dialStrokeWidth: number;
@@ -13,7 +13,7 @@ const Hole = ({
   containerRadius,
   dialStrokeWidth,
   dialRadius
-}: DigitProps) => {
+}: HoleProps) => {
   const radius = dialStrokeWidth * 0.4;
   const c = {
     y: containerRadius,
