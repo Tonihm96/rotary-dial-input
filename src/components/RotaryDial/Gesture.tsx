@@ -11,6 +11,7 @@ import {
 } from 'react-native-gesture-handler';
 
 import { INITIAL_ROTATION, FINAL_ROTATION } from '../../constants';
+import { usePasscode } from '../../hooks/usePasscode';
 import {
   clampValue,
   getSelectedDigit,
@@ -29,6 +30,8 @@ interface GestureProps {
 }
 
 const Gesture = ({ theta, center, radius, children }: GestureProps) => {
+  const { onInputChange } = usePasscode();
+
   /**
    * Offset from current angle stored in `theta.value`
    */
@@ -75,13 +78,14 @@ const Gesture = ({ theta, center, radius, children }: GestureProps) => {
     })
     .onFinalize(() => {
       limitReached.value = false;
+      const selectedDigit = getSelectedDigit(360 - toDeg(theta.value));
+      const hasSelectedDigit = !!selectedDigit;
 
-      console.log(getSelectedDigit(360 - toDeg(theta.value)));
+      if (hasSelectedDigit) {
+        onInputChange(selectedDigit);
+      }
 
-      theta.value = withSpring(INITIAL_ROTATION, {
-        stiffness: 100
-        //overshootClamping: true
-      });
+      theta.value = withSpring(INITIAL_ROTATION);
     });
 
   return <GestureDetector gesture={gesture}>{children}</GestureDetector>;

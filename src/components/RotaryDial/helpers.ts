@@ -52,7 +52,7 @@ export const isCloseToStart = (theta: number) => {
 /**
  * Returns selected digit based on a given angle
  *
- * `note:` -1 is not a valid digit
+ * `note:` -1 is not considered a valid digit
  * @param angle angle in degrees
  * @returns selected digit or undefined if no valid digit was selected
  *
@@ -68,5 +68,5 @@ export const getSelectedDigit = (angle: number) => {
     return minAngleOffset <= angle && angle <= maxAngleOffset;
   });
 
-  return selectedDigit > -1 ? selectedDigit : undefined;
+  return selectedDigit > -1 ? selectedDigit.toString() : undefined;
 };

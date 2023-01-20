@@ -21,8 +21,9 @@ export const DIGITS = [-1, ...Array(10).keys()];
  * Array for each digit hole
  */
 export const HOLES = [...Array(11).keys()];
-
 /**
  * Space in degrees between each digit
  */
 export const DIGIT_ROTATION_OFFSET = 26.5;
+
+export const PASSCODE = '1234';
