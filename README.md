@@ -2,10 +2,10 @@
 
 ## 📄 Descrição
 
-Esse projeto é um aplicativo desenvolvido com React Native e Expo que permite ao usuário inserir uma senha PIN de 4 dígitos usando um input em forma de disco de telefone rotativo.
+Esse projeto é um aplicativo desenvolvido com React Native e Expo que permite ao usuário inserir um PIN usando um disco de telefone rotativo.
 
-O projeto foi baseado no tutorial do YouTube abaixo.<br>
-🔗 [Link](https://youtu.be/Th6WxfhZsAM)
+O projeto foi baseado no tutorial do YouTube abaixo.
+<br>🔗 [Link](https://youtu.be/Th6WxfhZsAM)
 
 ## 💡 Funcionalidades
 - O usuário pode girar o disco para inserir cada dígito do PIN
