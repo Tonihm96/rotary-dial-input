@@ -4,7 +4,7 @@
 
 Esse projeto é um aplicativo desenvolvido com React Native e Expo que permite ao usuário inserir um número PIN usando um dial rotativo semelhante ao de um telefone antigo.
 
-O projeto foi baseado no tutorial do YouTube abaixo.
+O projeto foi baseado no tutorial abaixo.
 <br>🔗 [Link](https://youtu.be/Th6WxfhZsAM)
 
 ## 💡 Funcionalidades
